@@ -1,0 +1,32 @@
+
+ion-content.background{
+  --background: url('../home/imagen/libreria.jpg') 0 0/100% 100% no-repeat;
+}
+ion-title{
+  text-align: center;
+
+}
+ion-img{
+  max-width: 200px;
+  padding: .7em;
+}
+ion-card.datos{
+  padding: 10px;
+  color: darken($color: #000000, $amount: 0);
+  text-align: justify;
+  font: 15px Helvetica;
+  background: rgba(255, 255, 255, 0.61);
+}
+ion-card.titulo{
+  font: 20px Helvetica;
+  text-align: center;
+  color:rgb(158, 26, 26);
+  background: rgba(255, 255, 255, 0.678);
+}
+ion-card.contenido{
+  text-align: justify;
+  font: 17px Helvetica;
+  padding: 20px;
+  color: darken($color: #000000, $amount: 0);
+  background: rgba(255, 255, 255, 0.438);
+}

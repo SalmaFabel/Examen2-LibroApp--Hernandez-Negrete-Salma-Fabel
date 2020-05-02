@@ -1,0 +1,14 @@
+ion-header{
+    text-align: center;
+  }
+  ion-content.background{
+    --background: url('../home/imagen/bb.jpg') 0 0/100% 100% no-repeat;
+  }
+ ion-card{
+    text-align: justify;
+    padding: 5px;
+    font: 17px Helvetica;
+    color:darken($color: #000000, $amount: 0);
+    background: rgba(255, 255, 255, 0.76);
+ }
+

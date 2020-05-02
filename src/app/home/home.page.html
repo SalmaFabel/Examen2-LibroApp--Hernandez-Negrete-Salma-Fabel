@@ -1,0 +1,66 @@
+
+<ion-header>
+  <ion-toolbar color='danger'>
+    <ion-title class="ion-text-center">
+      Open Libra
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="danger">
+    <ion-searchbar [(ngModel)]="book_title"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button color="light" (click)="searchLibro()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card class="titulo">{{lib.title}}</ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="lib.thumbnail"></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+         
+          <b>Detalles del libro:</b> 
+       
+          <ion-card class="datos">
+            <ion-row>
+              <b>ID:</b> {{lib.ID}}
+            </ion-row>
+            <hr>
+          <ion-row>
+          <b>Año:</b> {{lib.publisher_date}}
+        </ion-row>
+        <hr>
+            <ion-row>
+              <b>Editorial:</b> {{lib.publisher}}
+            </ion-row>
+            <hr>
+            <ion-row>
+            <b>Idioma:</b> {{lib.language}}
+          </ion-row>
+          <hr>
+          <ion-row>
+            <b>Paginas:</b> {{lib.pages}}
+          </ion-row>
+        </ion-card>
+      </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    
+<ion-card class="contenido">
+  <ion-row>
+    <b>Escrito por:</b> {{lib.author}}
+      </ion-row>
+      <hr>
+      <ion-row>
+<b>Contenido:</b> {{lib.content}}
+</ion-row>
+</ion-card>
+</ion-content>
